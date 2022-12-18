@@ -55,7 +55,9 @@ Once a stream is consumed it cannot be used later on.
 
 Q4. 
 
-![alt text](C:\Users\ethan\OneDrive\Desktop\cssmodel.png)
+![alt text][image]
+
+[image]: C:\Users\ethan\OneDrive\Desktop\cssmodel.png
 
 
 The CSS box model is a box that wraps around the HTML elements on a webpage. The element content is the space that the actual element takes up. The padding is the spacing between the object content and the object. The border is the exterior of the object touching the edges of the object and the margin is the spacing between the object and any other objects on the webpage.
