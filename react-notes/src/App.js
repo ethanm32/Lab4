@@ -3,14 +3,14 @@ import './App.css';
 import { NotFoundError } from 'rxjs';
 import { ReactDOM } from 'react';
 import React from 'react';
-import Form from './Form';
+import Notes from './Notes';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>Notes</h1>
-        <Form/>
+        <Notes/>
       </header>
     </div>
   );

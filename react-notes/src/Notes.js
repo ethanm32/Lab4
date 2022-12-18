@@ -2,14 +2,13 @@ import { useRef, useState, useEffect} from "react";
 import React from "react";
 import { ReactDOM } from "react";
 
-function Form() {
+function Notes() {
     let counter = 0;
     const textnote = useRef(null);
     const colours = useRef(null);
     const[selectColour, setSelectColour] = useState('');
     const[selectBg, setSelectBg] = useState('')
     const [notes, setNotes] = useState(['','']);
-    const [buttons, setButton] = useState([]);
     function Submit(e) {
         counter++;
         e.preventDefault();
@@ -27,8 +26,13 @@ function Form() {
 
     }
 
-    const hello = (index) => {
-      setNotes(notes.filter((o, i) => index !== i));
+    const deleteNote = (index) => {
+      console.log(index)
+      setNotes((notes) => 
+        notes.filter((_, i) => i !== index)
+      );
+      
+
   };
 
     
@@ -56,8 +60,9 @@ function Form() {
             return (
                 <div contentEditable={true} key={index}  id='note' style={{ backgroundColor: selectBg}}>
                   {element}
-                  <button onClick={() => hello(index)}>Delete</button>  
-                    
+                  <div >
+                  <button onClick={() => deleteNote(index)}>Delete</button>  
+                  </div>
                 </div>
                 
             );
@@ -71,4 +76,4 @@ function Form() {
   }
   
  
-  export default Form;
+  export default Notes;
