@@ -9,6 +9,7 @@ C19305451
 
 Props are the actual data used in a React component such as a function. Props are the data passed in. They act like function arguments. Props are read-only. This is because they are pure functions and components modifying its own props cannot be changed. An example of props in code is shown below:
 
+![image](https://user-images.githubusercontent.com/57529120/208324593-197a29db-4440-4cd4-888b-718be5f06d63.png)
  
 The output of this would be My favourite team is Barcelona. The Football component is getting a prop team with the value “Barcelona”, which can be changed.
 
