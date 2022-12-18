@@ -17,7 +17,8 @@ The output of this would be My favourite team is Barcelona. The Football compone
 
 State is where values are stored that belong to the component. When the state changes, the component re-renders. An example of this in code is shown below:
 
- 
+![image](https://user-images.githubusercontent.com/57529120/208324618-6cb26367-d041-4ec3-adee-979064923ebe.png)
+
 Here the state is set in the constructor which can be changed/added to and then is called in the render return as this.state.team.
 
 
