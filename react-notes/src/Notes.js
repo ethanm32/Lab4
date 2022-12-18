@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect} from "react";
 import React from "react";
 import { ReactDOM } from "react";
+import { render } from "@testing-library/react";
 
 function Notes() {
     let counter = 0;
@@ -76,4 +77,5 @@ function Notes() {
   }
   
  
+  
   export default Notes;
