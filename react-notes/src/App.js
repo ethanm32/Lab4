@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import { NotFoundError } from 'rxjs';
-import { ReactDOM } from 'react';
+
 import React from 'react';
 import Notes from './Notes';
 

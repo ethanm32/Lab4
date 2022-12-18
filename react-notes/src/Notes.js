@@ -1,17 +1,14 @@
-import { useRef, useState, useEffect} from "react";
+import { useRef, useState} from "react";
 import React from "react";
-import { ReactDOM } from "react";
-import { render } from "@testing-library/react";
+
 
 function Notes() {
-    let counter = 0;
     const textnote = useRef(null);
     const colours = useRef(null);
     const[selectColour, setSelectColour] = useState('');
     const[selectBg, setSelectBg] = useState('')
     const [notes, setNotes] = useState(['','']);
     function Submit(e) {
-        counter++;
         e.preventDefault();
         setNotes(current => [...current, textnote.current.value])
         console.log(colours.current.value)
